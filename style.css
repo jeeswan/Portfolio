@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
+    background-color: antiquewhite;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    color: whitesmoke;
+    padding: 0.5rem 0;
+    padding-left: 25px;
     text-align: center;
-    display: inline;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: space-around;
 }
 
 header h1 {
@@ -23,21 +31,51 @@ nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    padding: 0;
+    text-align: left;
+    padding-left: 650px;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
+    padding: 0px 12px;
+    display: flex;
 }
 
 nav ul li a {
-    color: #fff;
+    color: whitesmoke;
     text-decoration: none;
+    padding: 0px 25px;
+    list-style: none;
 }
 
 section {
     padding: 20px;
+}
+
+#about {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px 0;
+    background-image: url(bg-image.jpg);
+}
+
+.aboutTitle {
+    align-items: center;
+    text-align: center;
+    font-family: 'Osward', sans-serif;
+    font-size: xx-large;
+}
+
+.description {
+    align-items: center;
+    padding: 40px 400px;
+    font-family: 'Dancing Script', cursive;
+    font-size: xx-large;
+}
+
+.myProjects {
+    display: flex;
 }
 
 .project {
@@ -50,8 +88,8 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
+    padding: 0.5rem 0;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
