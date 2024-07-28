@@ -3,80 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jeeswan - My Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1><span>J</span>eeswan</h1>
         <nav>
-            <ul>
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-xmark" id="menu-close" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-regular fa-bars" id="menu-open" onclick="openmenu()"></i>
+ 
         </nav>
-    </header>
+    </header>    
 
-    <section id="about">
-        <h2 class="aboutTitle">About Me</h2>
-        <p class="description">Hello! I am Jeeswan Bajracharya, a dedicated student passionate about web development and programming, currently mastering various programming language such as HTML, CSS, JavaScript, C, and C++.</p>
-    </section>
+    <div id="home" class="header-content">
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm <span>Jeeswan</span><br>Bajracharya from Nepal.</h1>
+        </div>
+        <div class="header-image">
+            <img src="image/bgimg.jpg" alt="myImage">
+        </div>
+    </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="myProjects">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Websites using HTML CSS an JS.</p>
-                <a href="https://github.com/jeeswan/Project.git" target="_blank">View on GitHub</a>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/user.jpg" alt="">
             </div>
-    
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Websites using HTML CSS an JS.</p>
-                <a href="https://github.com/jeeswan/Project.git" target="_blank">View on GitHub</a>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Jeeswan Bajracharya, a dedicated Computer Science student with a passion for web development. I thrive on creating visually engaging and user-friendly websites, always seeking to expand my knowledge and skills in this dynamic field. Through various projects and coursework, I've honed my abilities in HTML, CSS, JavaScript, and modern frameworks like React. My portfolio showcases a range of projects that reflect my commitment to continuous learning and my enthusiasm for crafting innovative web solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+
+                <div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desining Web/App interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <!-- <ul>
+                            <li><span>UI/UX</span><br>Desining Web/App interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul> -->
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>B.Sc CSIT at Asina College of Higher Studies</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-    
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>Websites using HTML CSS an JS.</p>
-                <a href="https://github.com/jeeswan/Project.git" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</div>
+
+<!-- Protfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="workList">
+            <div class="work">
+                <img src="image/work1.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>kjsegnjenkajbfkjnag</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
-        </div> 
-    </section>
+            <div class="work">
+                <img src="image/work2.jpg">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>kjsegnjenkajbfkjnag</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work3.jpg">
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>kjsegnjenkajbfkjnag</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
+<!-- contact -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bajrajeeswan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9803012886</p>
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="cv3.pdf" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message"></textarea>
+                    
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Jeeswan. All rights reserved.</p>
+</footer>
 
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/2be167a4b7.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
