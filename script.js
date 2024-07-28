@@ -1,19 +1,3 @@
-// form validation
-
-document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    if (name && email && message) {
-        alert('Thank you for your message, ' + name + '!');
-    } else {
-        alert('Please fill out all fields.');
-    }
-});
-
 // about section
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -26,16 +10,6 @@ function openTab(tabname){
     } 
     event.currentTarget.classList.add("active-link")
     document.getElementById(tabname).classList.add("active-tab");
-}
-
-// for small screen
-
-var sidemenu = document.getElementById(sidemenu);
-function openmenu(){
-    sidemenu.style.right="0";
-}
-function closemenu(){
-    sidemenu.style.right="-200px";
 }
 
 // save contact info in a google sheet
