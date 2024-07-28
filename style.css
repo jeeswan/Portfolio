@@ -337,6 +337,12 @@ form input, form textarea{
     background: #4B0082;
 }
 
+#msg{
+    color: #4B0082;
+    margin-top: -40px;
+    display: block;
+}
+
 /* footer */
 footer {
     background: #333;
